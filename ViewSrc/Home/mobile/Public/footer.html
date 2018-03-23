@@ -1,0 +1,58 @@
+<div class="tab-bar">
+    <div class="bar-item">
+        <a href="/">
+            <eq name="focus" value="首页">
+                <img src="../Public/image/h1.png">
+                <p style="color: #F84F51">首页</p>
+                <else/>
+                <img src="../Public/image/w1.png">
+                <p>首页</p>
+            </eq>
+        </a>
+    </div>
+    <div class="bar-item">
+        <a href="{:U('Index/rescue?_')}">
+            <eq name="focus" value="一呼百应">
+                <img src="../Public/image/h2.png">
+                <p style="color: #F84F51">一呼百应</p>
+                <else/>
+                <img src="../Public/image/w2.png">
+                <p>一呼百应</p>
+            </eq>
+        </a>
+    </div>
+    <div class="bar-item">
+        <a href="{:U('Index/instructions?_')}">
+            <eq name="focus" value="使用钦家">
+                <img src="../Public/image/h3.png">
+                <p style="color: #F84F51">使用钦家</p>
+                <else/>
+                <img src="../Public/image/w3.png">
+                <p>使用钦家</p>
+            </eq>
+        </a>
+    </div>
+    <div class="bar-item">
+        <a href="/lists_all">
+            <eq name="focus" value="钦家动态">
+                <img src="../Public/image/h4.png">
+                <p style="color: #F84F51">钦家动态</p>
+                <else/>
+                <img src="../Public/image/w4.png">
+                <p>钦家动态</p>
+            </eq>
+
+        </a>
+    </div>
+    <div class="bar-item">
+        <a href="https://www.mm-ishop.com">
+            <eq name="focus" value="钦家商城">
+                <img src="../Public/image/h5.png">
+                <p style="color: #F84F51">钦家商城</p>
+                <else/>
+                <img src="../Public/image/w5.png">
+                <p>钦家商城</p>
+            </eq>
+        </a>
+    </div>
+</div>

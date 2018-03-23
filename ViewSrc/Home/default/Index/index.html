@@ -1,0 +1,638 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div class="home-container">
+        <div class="home-head">
+            <div class="video-kuang">
+                <video class="home-video" id="sl-video" muted="muted"
+                       autoplay="autoplay" loop="loop">
+                    <source src="../Static/video/video3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="home-head-content">
+                <div class="home-head-title">
+                    <h2>全球首创</h2>
+                    <div class="title-line"></div>
+                    <p>以科技打造中国防走失预警平台</p>
+                    <a href="javascript:0" id="all-video" data-video-url="/Public/Home/video/video2.mp4" target="_blank">查看完整视频</a>
+                </div>
+                <div class="home-head-bottom">
+                    <a href="http://common.m-talk.mobi/mtalk/popularize.html" target="_blank"><img src="../Static/image/apple.png"></a>
+                    <a href="http://common.m-talk.mobi/mtalk/popularize.html" target="_blank"><img src="../Static/image/android.png"></a>
+                    <a href="/Public/Home/images/xiao.jpg" target="_blank"><img src="../Static/image/small.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-chain">
+            <div class="chain-container">
+                <div class="common-head">
+                    <h2>三大产品体系 打造“身份码”生态产业链</h2>
+                    <p>一人一物一码</p>
+                </div>
+                <div class="chain-table">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#elder">老人防走失</a></li>
+                        <li><a href="#child">儿童防走失</a></li>
+                        <li><a href="#pet">宠物防丢</a></li>
+                        <li><a href="#goods">物品防丢</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="elder">
+                            <div class="pane-img">
+                                <img src="../Static/image/elder3.jpg">
+                                <img src="../Static/image/elder4.jpg">
+                            </div>
+                            <div class="pane-content">
+                                <h2>老人防走失-小黄码</h2>
+                                <!--<p style="text-align: center"></p>-->
+                                <p>中国人口福利基金会联合钦家防走失预警平台共同打造<br>
+                                    1000万家庭用户基础<br>280+个公益组织协助支持<br>10000+志愿者传播推广
+                                    <br>一键发布求助 防止老人走失 <br>守护家庭幸福
+                                </p>
+                                <div class="pane-btn">
+                                    <a href="{:U('Index/product_elder?_')}">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="child">
+                            <div class="pane-img">
+                                <img src="../Static/image/child3.jpg">
+                                <img src="../Static/image/child4.jpg">
+                            </div>
+                            <div class="pane-content">
+                                <h2>儿童防走失</h2>
+                                <p style="text-align: center">2亿儿童撬动4亿父母刚性需求<br>带动8亿近亲间接参与<br>
+                                    公益+商业=全新平台生态圈<br>
+                                   以公益为传播 商业为支撑<br>覆盖全国84个主要城市<br>
+                                   缔造童装行业全新生态圈
+
+                               </p>
+                                <div class="pane-btn">
+                                    <a href="{:U('Index/product_child?_')}">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="pet">
+                            <div class="pane-img">
+                                <img src="../Static/image/pet4.jpg">
+                                <img src="../Static/image/pet2.jpg">
+                            </div>
+                            <div class="pane-content">
+                                <h2>宠物防丢</h2>
+                                <p style="text-align: center">萌趣／精巧／定制／新潮
+                                </p>
+                                <p style="text-align: center">防走失定位宠物衣服
+                                </p>
+                                <p style="text-align: center">
+                                    给爱宠多一份保护
+                                </p>
+                                <div class="pane-btn">
+                                    <a href="{:U('Index/product_pet?_')}">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="goods">
+                            <div class="pane-img">
+                                <img src="../Static/image/goods03.jpg">
+                                <img src="../Static/image/goods04.jpg">
+                            </div>
+                            <div class="pane-content">
+                                <h2>物品防丢</h2>
+                                <p style="text-align: center">精致设计／贴心保护／个性体验
+                                </p>
+                                <p style="text-align: center">让生活多一份安心 多一点乐趣</p>
+                                <div class="pane-btn">
+                                    <a href="{:U('Index/product_goods?_')}">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-frid">
+            <div class="frid-title">
+                <div class="common-head">
+                    <h2>物联网新科技——智能RFID身份标识</h2>
+                    <p>RFID——比身份证还高效便捷的个人身份信息标识，物联网发展关键技术</p>
+                </div>
+            </div>
+            <div class="frid-content">
+                <div class="banner1 swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner-img">
+                                <img src="../Static/image/rfid2.jpg">
+                            </div>
+                            <div class="banner-text">
+                                <div class="h-line"></div>
+                                <h2>RFID</h2>
+                                <p>
+                                    物联网是在互联网的基础上，利用射频自动识别、无线数据通信等技术，构造一个覆盖世界万物的“Internet of Things”，要实现万物相联，首先要将物品与互联网之间建立信息通道，使物品之间可以进行信息交换和通信，而实现这种物联的核心技术就是RFID。随着RFID技术的发展应用，未来将会向更广泛的领域延伸。</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner-img">
+                                <img src="../Static/image/rfid3.jpg">
+                            </div>
+                            <div class="banner-text">
+                                <div class="h-line"></div>
+                                <h2>智慧校园管理</h2>
+                                <p>智能考勤-采用智能RFID无感通讯技术，精准智能采集学生的到校、离校信息，使学校在线统计考勤，老师查询班级出勤率一目了然，同时智慧校园系统会发送信息至家长，便于家长实时获取孩子的到校、离校时间，确保孩子的安全。</p>
+                                <p>智慧成长-自动采集并记录孩子校内活动情况，查看孩子爱好的兴趣班，通过系统大数据分析充分发掘每个孩子的优势与闪光点，呵护他们快乐成长。</p>
+                                <p>班级圈-记录孩子点滴成长，分享校内活动精彩瞬间，打造一个和谐的家校互动空间。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination" style="margin-left: 3%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-app">
+            <div class="app-content">
+                <div class="app-title">
+                    <div class="common-head">
+                        <h2>保护家人安全，你不再孤军奋战</h2>
+                        <p>一键发布求助，<span>13亿</span>热心人士帮助寻找，让TA早日与您团聚</p>
+                    </div>
+                </div>
+                <div class="app-body">
+                    <div class="app-number">
+                        <p>防走失定位贴累计已经帮助超过<span>90699</span>位阿尔茨海默症患者</p>
+                        <p>覆盖全国<span>84</span>个城市</p>
+                    </div>
+                    <div class="app-bottom">
+                        <div class="app-new">
+                            <div class="app-new-left"><span>686</span>人发布求助</div>
+                            <div class="app-new-right">
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member2.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">Victordan</div>
+                                            <p>2017.12.12 发布求助 走失老人</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member3.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">笨小孩</div>
+                                            <p>2017.10.11 发布求助 走失儿童</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member4.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">奥特曼</div>
+                                            <p>2017.09.09 发布求助 走失宠物</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-new">
+                            <div class="app-new-left"><span>5868</span>人提供线索</div>
+                            <div class="app-new-right">
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member5.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">Vic</div>
+                                            <p>2017.12.12 给"小美女"提供线索</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member6.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">Srdan</div>
+                                            <p>2017.09.11 给"Roser"提供线索</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member7.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">晓明</div>
+                                            <p>2017.07.10 给"mister"提供线索</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-new">
+                            <div class="app-new-left"><span>8966</span>人得到帮助</div>
+                            <div class="app-new-right">
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member8.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">阿喵</div>
+                                            <p>2017.12.12 关闭求助 找到老人</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member9.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">Objk</div>
+                                            <p>2017.8.10 关闭求助 找到物品</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:0">
+                                    <div class="new-item">
+                                        <div class="item-pic">
+                                            <img src="../Static/image/member10.png">
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-head">夜空</div>
+                                            <p>2017.7.9 关闭求助 找到宠物</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="home-public">
+            <div class="public-content">
+                <div class="public-head">
+                    <div class="common-head">
+                        <h2>公益同行，我们一直在「爱」的路上</h2>
+                        <p>钦家防走失预警平台与中国人口福利基金会，开展黄手环行动，帮助更多的走失者回家!</p>
+                    </div>
+                </div>
+                <div class="public-body">
+                    <div class="banner2 swiper-container">
+                        <div class="swiper-wrapper">
+                            <volist name="public_list" id="vo" key="k">
+                                <eq name="k" value="1">
+                                    <div class="swiper-slide">
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[0]['id'])}">
+                                                <div class="notice-1"
+                                                     style="background: url({:get_cover($gybd_list[0]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[0]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[1]['id'])}">
+                                                <div class="notice-2"
+                                                     style="background: url({:get_cover($gybd_list[1]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <div class="notice-3">
+                                                <a href="{:U('Article/detail?id='.$gybd_list[2]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[2]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                                <a href="{:U('Article/detail?id='.$gybd_list[3]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[3]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[4]['id'])}">
+                                                <div class="notice-4"
+                                                     style="background: url({:get_cover($gybd_list[4]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[4]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[5]['id'])}" class="notice-5">
+                                                <div class="notice-5" style="background: url({:get_cover($gybd_list[5]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[5]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </eq>
+                                <eq name="k" value="2">
+                                    <div class="swiper-slide">
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[6]['id'])}">
+                                                <div class="notice-1"
+                                                     style="background: url({:get_cover($gybd_list[6]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[6]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[7]['id'])}">
+                                                <div class="notice-2"
+                                                     style="background: url({:get_cover($gybd_list[7]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <div class="notice-3">
+                                                <a href="{:U('Article/detail?id='.$gybd_list[8]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[8]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                                <a href="{:U('Article/detail?id='.$gybd_list[9]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[9]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[10]['id'])}">
+                                                <div class="notice-4"
+                                                     style="background: url({:get_cover($gybd_list[10]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[10]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[11]['id'])}" class="notice-5">
+                                                <div class="notice-5" style="background: url({:get_cover($gybd_list[11]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <div class="notice-text">
+                                                        <p>
+                                                            {$gybd_list[11]['title']}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </eq>
+                                <eq name="k" value="3">
+                                    <div class="swiper-slide">
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[12]['id'])}">
+                                                <div class="notice-1"
+                                                     style="background: url({:get_cover($gybd_list[12]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <p>
+                                                        {$gybd_list[12]['title']}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[13]['id'])}">
+                                                <div class="notice-2"
+                                                     style="background: url({:get_cover($gybd_list[13]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <div class="notice-3">
+                                                <a href="{:U('Article/detail?id='.$gybd_list[14]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[14]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                                <a href="{:U('Article/detail?id='.$gybd_list[15]['id'])}">
+                                                    <div class="notice-child"
+                                                         style="background: url({:get_cover($gybd_list[15]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <a href="{:U('Article/detail?id='.$gybd_list[16]['id'])}">
+                                                <div class="notice-4"
+                                                     style="background: url({:get_cover($gybd_list[16]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <p>
+                                                        {$gybd_list[16]['title']}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="notice">
+                                            <a href="{:U('Article/detail?id='.$gybd_list[17]['id'])}" class="notice-5">
+                                                <div class="notice-5" style="background: url({:get_cover($gybd_list[17]['cover_id'],$field = path)});background-size: cover;background-position: center center;">
+                                                    <p>
+                                                        {$gybd_list[17]['title']}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </eq>
+                            </volist>
+                        </div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-dynamic">
+            <div class="dynamic-content">
+                <div class="dynamic-head">
+                    <div class="common-head">
+                        <h2>钦家动态</h2>
+                        <p>第一时间了解钦家最新信息</p>
+                    </div>
+                </div>
+                <div class="dynamic-body">
+                    <div class="dynamic-items">
+                        <div class="items-hd">
+                            <a href="/mtbd">
+                                更多 >
+                            </a>
+                            <span>媒体报道</span>
+                        </div>
+                        <volist name="mtbd_list" id="vo" offset="0" length='4'>
+                            <div class="items-bd">
+                                <a href="{:U('news/'.$vo['id'])}" class="item">
+                                    <h4 class="item-title">
+                                       {$vo.title}
+                                    </h4>
+                                    <p class="item-title">
+                                        {$vo.description}
+                                    </p>
+                                </a>
+                            </div>
+                        </volist>
+                    </div>
+                    <div class="dynamic-items">
+                        <div class="items-hd">
+                            <a href="/qjxw">
+                                更多 >
+                            </a>
+                            <span>钦家新闻</span>
+                        </div>
+                        <volist name="qjxw_list" id="vo" offset="0" length='4'>
+                            <div class="items-bd">
+                                <a href="{:U('Article/detail?id='.$vo['id'])}" class="item">
+                                    <h4 class="item-title">
+                                        {$vo.title}
+                                    </h4>
+                                    <p class="item-title">
+                                        {$vo.description}
+                                    </p>
+                                </a>
+                            </div>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-media">
+            <div class="home-media-content">
+                <div class="home-media-hd">
+                    <div class="common-head1">
+                        <h2>合作媒体</h2>
+                    </div>
+                </div>
+                <div class="home-media-bd">
+                    <div class="media-items">
+                        <a href="http://www.cctv.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo1.png">
+                        </a>
+                        <a href="http://www.iqiyi.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo2.png">
+                        </a>
+                        <a href="http://www.china.com.cn/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo3.png">
+                        </a>
+                        <a href="http://www.xinmin.cn/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo4.png">
+                        </a>
+                        <a href="http://www.gmw.cn/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo5.png">
+                        </a>
+                        <a href="http://www.people.com.cn/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo6.png">
+                        </a>
+                        <a href="http://www.xinhuanet.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo7.png">
+                        </a>
+                    </div>
+                    <div class="media-items">
+                        <a href="https://www.sohu.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo8.png">
+                        </a>
+                        <a href="http://www.163.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo9.png">
+                        </a>
+                        <a href="http://www.ifeng.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo10.png">
+                        </a>
+                        <a href="http://www.huanqiu.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo11.png">
+                        </a>
+                        <a href="http://www.sina.com.cn/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo12.png">
+                        </a>
+                        <a href="http://www.china.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo13.png">
+                        </a>
+                        <a href="http://www.qq.com/" rel="nofollow" target="_blank">
+                            <img src="../Static/image/bottom-logo14.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-mask modal-transition hidden">
+        <div class="modal-wrapper">
+            <div class="modal-container">
+                <div class="modal-close">X</div>
+                <div class="modal-body1 modal-body-zero">
+                    <video id="window-video" width="100%" height="100%" controls="" autoplay="" slot="body" > 您的浏览器不支持 video 标签。
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        $(window).resize(function () {
+            if ($(window).height()-100<700)
+            {
+                $('.home-head').css("height",700-100);
+            }
+            else{
+                $('.home-head').css("height",$(window).height()-100);
+            }
+        });
+        $(document).ready(function () {
+            if ($(window).height()-100<700)
+            {
+                $('.home-head').css("height",700-100);
+            }
+            else{
+                $('.home-head').css("height",$(window).height()-100);
+            }
+
+            var mySwiper = new Swiper('.banner1', {
+                autoplay: 5000,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+            });
+
+            var mySwiper1 = new Swiper('.banner2', {
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+            });
+
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            var myVideo=document.getElementById("window-video");
+            $("#all-video").on("click",function(){
+                $("#window-video").attr({"src":$(this).data("video-url")});
+                document.getElementById("sl-video").pause();
+                myVideo.play();
+                $(".modal-mask.modal-transition").removeClass("hidden");
+            });
+            $(".modal-mask.modal-transition,.modal-close").on("click",function(){$(".modal-mask.modal-transition").addClass("hidden");myVideo.pause();document.getElementById("sl-video").play();})
+        });
+    </script>
+</block>

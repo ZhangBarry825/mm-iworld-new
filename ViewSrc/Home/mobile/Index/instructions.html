@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="Public/head"/>
+</head>
+<body>
+<div class="used-container">
+    <include file="Public/header"/>
+    <div class="used-head"></div>
+    <div class="used-content">
+        <h3>下载安装钦家</h3>
+        <h2>钦家-中国防走失预警平台</h2>
+        <p>精准定位 云端数据防护 1000万家庭用户的选择</p>
+        <div class="used-download">
+            <div class="download-1">
+                <img src="../../default/Static/image/wechat.jpg">
+                <p>扫描二维码</p>
+                <p>下载手机客户端</p>
+            </div>
+            <div class="download-2">
+                <a href="http://common.m-talk.mobi/mtalk/popularize.html">
+                    <img src="../../default/Static/image/app-store.png">
+                </a>
+            </div>
+            <div class="download-2">
+                <a href="http://common.m-talk.mobi/mtalk/popularize.html">
+                    <img src="../../default/Static/image/robot.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="used-how">
+        <h2>如何使用钦家</h2>
+        <div class="how-head">
+            <img src="../../default/Static/image/status4.png">
+            <span>定位帖功能介绍</span>
+        </div>
+        <p>原理：将二维码通过独立加密技术成像，与个人身份信息绑定，形成个人身份专属二维码。用户可以将二维码烫印在需要关爱人群的（小孩/老人）
+            衣服上，通过智能手机扫描，家人可以准确获得关爱对象的具体位置等相关信息，降低走失风险。</p>
+        <p>
+            钦家联动公安、执法、教育、医疗等多机构打造安全防护墙，在家庭、学校、医院等多场所形成寻人天网，快速、及时、有效解决家人走失问题，极大增加走失儿童和老人的寻回率，打造强有力的防走失预警系统。
+        </p>
+    </div>
+    <div class="used-items">
+        <div class="used-item">
+            <div class="item-pic">
+                <a href="javascript:0" class="all-video" data-video-url="/Public/Home/video/v01.mp4"
+                   target="_blank"><img src="../../default/Static/image/used2.png"></a>
+            </div>
+            <div class="item-text">
+                <h2>如何烫印定位帖</h2>
+                <p>独家技术专利</p>
+                <p>按键操作 安全方便</p>
+                <p>6秒快速完成烫印</p>
+            </div>
+        </div>
+        <div class="used-item">
+            <div class="item-text">
+                <h2>如何绑定定位帖</h2>
+                <p>使用app扫描二维码添</p>
+                <p>加信息</p>
+                <p>云端加密防护</p>
+                <p>数据不被泄露</p>
+            </div>
+            <div class="item-pic">
+                <a href="javascript:0" class="all-video" data-video-url="/Public/Home/video/v02.mp4"
+                   target="_blank">
+                    <img src="../../default/Static/image/used3.png">
+                </a>
+            </div>
+        </div>
+        <div class="used-item">
+            <div class="item-pic">
+                <a href="javascript:0" class="all-video" data-video-url="/Public/Home/video/v03.mp4"
+                   target="_blank">
+                    <img src="../../default/Static/image/used4.png">
+                </a>
+            </div>
+            <div class="item-text">
+                <h2>如何发布求助信息</h2>
+                <p>一键发布 简单快速</p>
+                <p>7*24h小时客服</p>
+                <p>逐级推送 启动全城搜寻</p>
+                <p>黄金24小时紧急援助</p>
+            </div>
+        </div>
+    </div>
+    <include file="Public/footer"/>
+    <div class="modal-mask modal-transition hidden">
+        <div class="modal-wrapper">
+            <div class="modal-container">
+                <div class="modal-close">X</div>
+                <div class="modal-body1 modal-body-zero">
+                    <video id="window-video" width="100%" height="300" controls="" autoplay="" slot="body"> 您的浏览器不支持 video 标签。
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        var myVideo = document.getElementById("window-video");
+        $(".all-video").on("click", function () {
+            console.log(1);
+            $("#window-video").attr({"src": $(this).data("video-url")});
+//            document.getElementById("sl-video").pause();
+            myVideo.play();
+            $(".modal-mask.modal-transition").removeClass("hidden");
+        });
+        $(".modal-mask.modal-transition,.modal-close").on("click", function () {
+            $(".modal-mask.modal-transition").addClass("hidden");
+            myVideo.pause();
+//            document.getElementById("sl-video").play();
+        })
+
+    });
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Public/head"/>
+</head>
+<body>
+<div class="lists-container">
+    <include file="Public/header"/>
+    <div class="lists-head">
+        <div class="lists-head-content">
+            <h4>钦家动态</h4>
+            <p>第一时间了解钦家最新消息</p>
+        </div>
+    </div>
+    <div class="lists-body">
+        <volist name="list" id="vo">
+            <div class="lists-item">
+                <a href="{:U('Article/detail?id='.$vo['id'])}">
+                    <div class="lists-item-left" style="background: url({:get_cover($vo['cover_id'],$field = path)});background-size: cover;background-repeat: no-repeat;background-position: center center">
+                    </div>
+                    <div class="lists-item-right">
+                        <h2>{$vo.title}</h2>
+                        <p>{$vo.description}</p>
+                    </div>
+                </a>
+            </div>
+        </volist>
+        <div class="onethink fenye">
+            <article:page cate="$category['id']" listrow="10" />
+        </div>
+        <div class="block"></div>
+    </div>
+    <include file="Public/footer"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "name": "fis-um",
+    "version": "1.0.1",
+    "description": "hnbtr fis-um description",
+    "author": "yangtao",
+    "scripts": {
+        "clean": "cd ViewSrc && fis-um release -c",
+        "work": "cd ViewSrc && fis-um release -w"
+    }
+}

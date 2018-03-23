@@ -1,0 +1,87 @@
+<div class="head">
+    <div class="head-content">
+        <div class="hd-logo">
+            <a href="/">
+            <img src="../Static/image/hd-logo01.png">
+            </a>
+        </div>
+        <div class="hd-nav">
+            <think:nav name="nav">
+                <eq name="nav.pid" value="0">
+                    <eq name="nav.title" value="$focus">
+                        <a class="nav-item nav-focus" href="{$nav.url|get_nav_url}"
+                           target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                        <else/>
+                        <a class="nav-item" href="{$nav.url|get_nav_url}"
+                           target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                    </eq>
+                </eq>
+            </think:nav>
+        </div>
+    </div>
+</div>
+<div class="second-head">
+    <div class="second-head-item">
+        <a href="{:U('Index/introduction?_')}">
+            <eq name="column" value="品牌故事">
+                <img src="../Static/image/h-1.png">
+                <else/>
+                <img src="../Static/image/b-1.png">
+            </eq>
+            <p>品牌故事</p>
+        </a>
+    </div>
+    <div class="second-head-item">
+        <a href="{:U('Index/technology?_')}">
+            <eq name="column" value="领先技术">
+                <img src="../Static/image/h-2.png">
+                <else/>
+                <img src="../Static/image/b-2.png">
+            </eq>
+            <p>领先技术</p>
+        </a>
+    </div>
+    <div class="second-head-item">
+        <a href="{:U('Index/patent?_')}">
+            <eq name="column" value="独家专利">
+                <img src="../Static/image/h-3.png">
+                <else/>
+                <img src="../Static/image/b-3.png">
+            </eq>
+            <p>独家专利</p>
+        </a>
+    </div>
+    <div class="second-head-item">
+        <a href="{:U('Index/join_us?_')}">
+            <eq name="column" value="加入我们">
+                <img src="../Static/image/h-4.png">
+                <else/>
+                <img src="../Static/image/b-4.png">
+            </eq>
+            <p>加入我们</p>
+        </a>
+    </div>
+    <div class="second-head-item">
+        <a href="{:U('Index/center?_')}">
+            <eq name="column" value="服务与帮助">
+                <img src="../Static/image/h-5.png">
+                <else/>
+                <img src="../Static/image/b-5.png">
+            </eq>
+            <p>服务与帮助</p>
+        </a>
+    </div>
+    <div class="second-head-item">
+        <a href="{:U('Index/law?_')}">
+            <eq name="column" value="法律声明">
+                <img src="../Static/image/h-6.png">
+                <else/>
+                <img src="../Static/image/b-6.png">
+            </eq>
+            <p>法律声明</p>
+        </a>
+    </div>
+</div>
+<div class="crumb">
+    <p><a href="/">钦家首页</a> > <a>{$column}</a></p>
+</div>

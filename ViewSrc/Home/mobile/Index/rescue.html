@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="Public/head"/>
+</head>
+<body>
+<div class="rescue-container">
+    <include file="Public/header"/>
+    <div class="rescue-head">
+        <div>
+            <h2>黄金24小时，中国防走失预警平台</h2>
+            <p>一人发布求助 13亿人来帮助</p>
+        </div>
+    </div>
+    <div class="rescue-content">
+        <h2>钦家一呼百应是什么</h2>
+        <p> 一呼百应功能为全球首创，专为寻找自己亲人而建立的APP功能模块。用户只要填写并发布走失者信息，后台就可自动将信息传递给所有同城用户，让更多用户帮助您一起寻找亲人，筑建全民响应的安全墙。只需一键发布求助，即可全民响应帮助您迅速寻找亲人，当路人发现走失者并扫描定位贴时，后台即可准确获取定位信息，并将信息通过APP推送和手机短信发送至使用者绑定的紧急联系人手机。</p>
+        <div class="rescue-bg"></div>
+    </div>
+    <div class="rescue-what">
+        <div class="what-head">
+            <h2>钦家一呼百应能做什么</h2>
+            <p>黄金24小时 紧急求助</p>
+        </div>
+        <div class="what-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../default/Static/image/what1.png">
+                        <div class="banner-text">
+                            <h3>逐级推送</h3>
+                            <p>发布求助后，周边用户收到走失信息会立即加入行动，帮助一起寻找走失者</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../default/Static/image/what2.png">
+                        <div class="banner-text">
+                            <h3>层层把关 保障信息真实</h3>
+                            <p>走失牵一发而动全身，钦家防走失预警平台严格把关信息真伪，一旦发生走失，家人可第一时间在钦家平台发布紧急求助，发动周边用户帮忙找回</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../default/Static/image/what3.png">
+                        <div class="banner-text">
+                            <h3>亿万用户搜寻</h3>
+                            <p>在钦家平台发布求助信息后，走失信息将呈定向式推送，以走失地为圆心层层扩散，走失发生1小时内，信息推送至半径100公里范围的用户；2小时内，推送半径扩大至200公里；3小时内，半径扩大至300公里；3小时以上，半径扩大至500公里，号召更多的人帮忙寻找</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <include file="Public/footer"/>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,
+            pagination: '.swiper-pagination'
+        });
+    });
+</script>
+</html>
