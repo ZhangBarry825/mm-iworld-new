@@ -9,11 +9,23 @@
             <think:nav name="nav">
                 <eq name="nav.pid" value="0">
                     <eq name="nav.title" value="$focus">
-                        <a class="nav-item nav-focus" href="{$nav.url|get_nav_url}"
-                           target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                        <eq name='nav.title' value='钦家商城'>
+                            <a class="nav-item nav-focus" href="https://mm-iworld.taobao.com/"
+                               target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"
+                               rel="<eq name='nav.title' value='钦家商城'>nofollow</eq>">{$nav.title}</a>
+                            <else/>
+                            <a class="nav-item nav-focus" href="{$nav.url|get_nav_url}"
+                               target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                        </eq>
                         <else/>
-                        <a class="nav-item" href="{$nav.url|get_nav_url}"
-                           target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                        <eq name='nav.title' value='钦家商城'>
+                            <a class="nav-item" href="https://mm-iworld.taobao.com/"
+                               target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"
+                               rel="<eq name='nav.title' value='钦家商城'>nofollow</eq>">{$nav.title}</a>
+                            <else/>
+                            <a class="nav-item" href="{$nav.url|get_nav_url}"
+                               target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                        </eq>
                     </eq>
                 </eq>
             </think:nav>
@@ -23,12 +35,12 @@
 <div class="second-head">
     <div class="second-head-item">
         <a href="{:U('Index/introduction?_')}">
-            <eq name="column" value="品牌故事">
+            <eq name="column" value="关于我们">
                 <img src="../Static/image/h-1.png">
                 <else/>
                 <img src="../Static/image/b-1.png">
             </eq>
-            <p>品牌故事</p>
+            <p>关于我们</p>
         </a>
     </div>
     <div class="second-head-item">

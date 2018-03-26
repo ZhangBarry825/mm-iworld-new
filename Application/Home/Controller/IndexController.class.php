@@ -62,7 +62,7 @@ class IndexController extends HomeController {
 
     public function introduction(){
         $this->assign('focus',"关于钦家");
-        $this->assign('column',"品牌故事");
+        $this->assign('column',"关于我们");
         $this->display();
     }
 
