@@ -74,7 +74,7 @@ class IndexController extends HomeController {
 
     public function patent(){
         $this->assign('focus',"关于钦家");
-        $this->assign('column',"独家专利");
+        $this->assign('column',"发展历程");
         $this->display();
     }
 
