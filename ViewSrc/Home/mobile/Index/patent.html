@@ -6,15 +6,45 @@
 </head>
 <body>
 <include file="Public/header1"/>
-<div class="patent-container">
+<div class="patent-container patent-container-box">
+    <h2>发展历程</h2>
+    <div class="patent-container-cc">
+        <volist name="fzlc_list" id="data" key="k">
+
+            <if condition='$k%2 neq 0'>
+                <div class="patent-container-left">
+                    <div class="ccc">
+                        <img class="yuandian" src="../../default/Static/image/yuandian.png">
+                        <div class="shuxian"></div>
+                    </div>
+                    <p class="p1">{$data.title}</p>
+                    <p class="p2">{$data.description}</p>
+                </div>
+                <div class="patent-container-z"></div>
+                <else/>
+                <div class="patent-container-right">
+                    <div class="ccc">
+                        <img class="yuandian" src="../../default/Static/image/yuandian.png">
+                        <div class="shuxian"></div>
+                    </div>
+
+                    <p class="p1">{$data.title}</p>
+                    <p class="p2">
+                        {$data.description}</p>
+                </div>
+                <div class="patent-container-z"></div>
+            </if>
+        </volist>
+    </div>
+
 
     <!--<div class="patent-content">-->
-        <!--<h4 class="patent-content-text">-->
-            <!--钦家荣获专利证书<br>-->
-            <!--注册商标<br>-->
-            <!--著作权共52项<br>-->
-        <!--</h4>-->
-        <!--<img src="../../default/Static/image/zhengshu01.jpg">-->
+    <!--<h4 class="patent-content-text">-->
+    <!--钦家荣获专利证书<br>-->
+    <!--注册商标<br>-->
+    <!--著作权共52项<br>-->
+    <!--</h4>-->
+    <!--<img src="../../default/Static/image/zhengshu01.jpg">-->
 
     <!--</div>-->
 </div>

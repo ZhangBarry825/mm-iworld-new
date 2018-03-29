@@ -75,6 +75,15 @@ class IndexController extends HomeController {
     public function patent(){
         $this->assign('focus',"关于钦家");
         $this->assign('column',"发展历程");
+
+        $Document = D('Document');
+        $Category = M('Category');
+
+        $fzlc_id = $Category->field('id')->where("name = 'fzlc'")->find();
+        $fzlc_list =$Document->lists($fzlc_id['id'],'`level` desc');
+//        print_r($fzlc_list);
+
+        $this->assign('fzlc_list',$fzlc_list);
         $this->display();
     }
 

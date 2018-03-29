@@ -1,60 +1,92 @@
-<extend name="Base/common1" />
+<extend name="Base/common1"/>
 <block name="body">
-    <div class="patent-container">
+    <div class="patent-container patent-container-box">
+        <h2>发展历程</h2>
+
+        <volist name="fzlc_list" id="data" key="k">
+
+            <if condition='$k%2 neq 0'>
+                <div class="patent-container-left">
+                    <div class="ccc">
+                        <img class="yuandian" src="../Static/image/yuandian.png">
+                        <div class="shuxian"></div>
+                    </div>
+                    <p class="p1">{$data.title}</p>
+                    <p class="p2">{$data.description}</p>
+                </div>
+                <div class="patent-container-z"></div>
+                <else/>
+                <div class="patent-container-right">
+                    <div class="ccc">
+                        <img class="yuandian" src="../Static/image/yuandian.png">
+                        <div class="shuxian"></div>
+                    </div>
+
+                    <p class="p1">{$data.title}</p>
+                    <p class="p2">
+                        {$data.description}</p>
+                </div>
+                <div class="patent-container-z"></div>
+            </if>
+
+
+        </volist>
+
+
         <!--<div class="patent-head">-->
-            <!--<h4>荣获专利证书、注册商标、著作权52项</h4>-->
-            <!--<h4>独家专利</h4>-->
-            <!--<div class="patent-line"></div>-->
+        <!--<h4>荣获专利证书、注册商标、著作权52项</h4>-->
+        <!--<h4>独家专利</h4>-->
+        <!--<div class="patent-line"></div>-->
         <!--</div>-->
         <!--<div class="patent-content">-->
-            <!--<h4 class="patent-content-text">-->
-                <!--钦家荣获专利证书<br>-->
-                <!--注册商标<br>-->
-                <!--著作权共52项<br>-->
-            <!--</h4>-->
-            <!--<img src="../Static/image/zhengshu01.jpg">-->
-            <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent1.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>钦家智能定位系统(安卓版)</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent2.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>一种服装烫印标签专利证书</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent3.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>香港铭码集团商标注册证明书</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent4.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>钦家logo商标注册证</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent5.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>智能标签手持烫印机</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent6.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>钦家智能定位系统(IOS版)</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent7.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>吉祥物(M星狗)外观设计专利</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent8.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>《钦家》商标注册证</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img src="../Static/image/patent9.png">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p>Intertek安全认证书</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<h4 class="patent-content-text">-->
+        <!--钦家荣获专利证书<br>-->
+        <!--注册商标<br>-->
+        <!--著作权共52项<br>-->
+        <!--</h4>-->
+        <!--<img src="../Static/image/zhengshu01.jpg">-->
+        <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent1.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>钦家智能定位系统(安卓版)</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent2.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>一种服装烫印标签专利证书</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent3.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>香港铭码集团商标注册证明书</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent4.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>钦家logo商标注册证</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent5.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>智能标签手持烫印机</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent6.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>钦家智能定位系统(IOS版)</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-items">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent7.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>吉祥物(M星狗)外观设计专利</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent8.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>《钦家》商标注册证</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="patent-item">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../Static/image/patent9.png">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>Intertek安全认证书</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
         <!--</div>-->
     </div>
 </block>
