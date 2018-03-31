@@ -92,6 +92,15 @@ class IndexController extends HomeController {
         $this->assign('column',"加入我们");
         $this->display();
     }
+    public function join_us_detail(){
+        $id=$_GET['id'];
+//        print_r($id);
+//        D('Document')->detail('null');
+        $this->assign('focus',"关于钦家");
+        $this->assign('column',"加入我们");
+        $this->assign('id',$id);
+        $this->display();
+    }
 
     public function center(){
         $this->assign('focus',"关于钦家");

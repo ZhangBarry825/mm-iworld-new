@@ -116,6 +116,7 @@ return array(
     ),
     'URL_ROUTE_RULES'=>array(
         'news/:id'               => 'Article/detail',
+        'detail/:id'               => 'Index/join_us_detail',
         'lists_all/:p'               => 'Article/lists_all',
         'lists/:category/:p'               => 'Article/lists',
     ),

@@ -34,12 +34,15 @@ class ArticleController extends HomeController {
 		$category = $this->category_lists();
 		/* 获取当前分类列表 */
 		$Document = D('Document');
-        $list = $Document->page($p, 10)->lists($category['id']);
+		$arr=$category['c1']['id'].','.$category['c2']['id'].','.$category['c3']['id'];
+        $count=$Document->listCount($category['c1']['id'])+$Document->listCount($category['c2']['id'])+$Document->listCount($category['c3']['id']);
+//		print_r($count);
+        $list = $Document->page($p, 10)->lists($arr);
 		if(false === $list){
 			$this->error('获取列表数据失败！');
 		}
 		/* 模板赋值并渲染模板 */
-		$this->assign('category', $category);
+		$this->assign('arr', $arr);
 		$this->assign('list', $list);
 		$this->assign('focus', '钦家动态');
 		$this->display('lists');
@@ -118,10 +121,12 @@ class ArticleController extends HomeController {
 		/* 标识正确性检测 */
 		$id1=0;
         $id2=0;
+        $id3=0;
 		$id1 = $id1 ? $id1 : 'mtbd';
 		$id2 = $id2 ? $id2 : 'qjxw';
+		$id3 = $id3 ? $id3 : 'gybd';
 
-		if(empty($id1)&&empty($id2)){
+		if(empty($id1)&&empty($id2)&&empty($id3)){
 			$this->error('没有指定文档分类！');
 		}
 
@@ -129,6 +134,7 @@ class ArticleController extends HomeController {
 		$category=[];
 		$category['c1'] = D('Category')->info($id1);
 		$category['c2'] = D('Category')->info($id2);
+		$category['c3'] = D('Category')->info($id3);
 		foreach ($category as $val){
             if($val && 1 == $val['status']){
                 if($val['display']==0)$this->error('该分类禁止显示！');
