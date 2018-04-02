@@ -1,32 +1,59 @@
 <extend name="Base/common"/>
 <block name="body">
-	<div class="lists-container">
-		<div class="lists-head">
-			<div class="lists-head-content">
-				<h4>钦家动态</h4>
-				<p>第一时间了解钦家最新消息</p>
-				<div class="lists-head-bottom">
-					<a href="/">钦家首页</a><span> &gt; </span><a href="/lists_all">钦家动态</a>
-				</div>
-			</div>
-		</div>
-		<div class="lists-body">
-			<volist name="list" id="vo">
-				<div class="lists-item">
-					<a href="{:U('Article/detail?id='.$vo['id'])}">
-						<div class="lists-item-left" style="background: url({:get_cover($vo['cover_id'],$field = path)});background-size: cover;background-repeat: no-repeat;background-position: center center">
-						</div>
-						<div class="lists-item-right">
-							<p>{$vo.create_time|date='Y-m-d H:i:s',###}</p>
-							<h2>{$vo.title}</h2>
-							<p>{$vo.description}</p>
-						</div>
-					</a>
-				</div>
-			</volist>
-			<div class="onethink fenye">
-				<article:page cate="$arr" listrow="10" />
-			</div>
-		</div>
-	</div>
+    <div class="lists-container">
+        <!--<div class="lists-head">-->
+        <!--<div class="lists-head-content">-->
+        <!--<h4>钦家动态</h4>-->
+        <!--<p>第一时间了解钦家最新消息</p>-->
+        <!--<div class="lists-head-bottom">-->
+        <!--<a href="/">钦家首页</a><span> &gt; </span><a href="/lists_all">钦家动态</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <div class="used-head">
+            <div class="video-kuang">
+
+                <video class="home-video" id="sl-video" muted="muted"
+                       autoplay="autoplay" loop="loop">
+                    <source src="../Static/video/video4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+            <div class="lists-center">
+                <h4>钦家动态</h4>
+                <p>第一时间了解钦家最新消息</p>
+                <div class="lists-head-bottom">
+                    <a href="/">钦家首页</a><span> &gt; </span><a href="/lists_all">钦家动态</a>
+                </div>
+            </div>
+
+
+            <!--<div class="used-crumbs">-->
+            <!--<a href="/">钦家首页</a><span> > </span><a>钦家动态</a>-->
+            <!--</div>-->
+        </div>
+
+
+        <div class="lists-body">
+            <volist name="list" id="vo">
+                <div class="lists-item">
+                    <a href="{:U('Article/detail?id='.$vo['id'])}">
+                        <div class="lists-item-left"
+                             style="background: url({:get_cover($vo['cover_id'],$field = path)});background-size: cover;background-repeat: no-repeat;background-position: center center">
+                        </div>
+                        <div class="lists-item-right">
+                            <p>{$vo.create_time|date='Y-m-d H:i:s',###}</p>
+                            <h2>{$vo.title}</h2>
+                            <p>{$vo.description}</p>
+                        </div>
+                    </a>
+                </div>
+            </volist>
+            <div class="onethink fenye">
+                <article:page cate="$arr" listrow="10"/>
+            </div>
+        </div>
+    </div>
 </block>
